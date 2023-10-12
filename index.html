@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Programa de bolinhas</title>  
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+    <div id="controles" class="controles">
+        <div class="controle">
+            <label>Número de bolinhas</label>
+            <input type="number" min="0" id="num_objetos">
+            
+          
+        </div>
+        <div class="controle">
+            <label>Quantidade bolinhas</label>
+            <input type="number" value="1" min="0" id="txt_qtde">
+            <button id="btn_add">Adicionar</button>
+        </div>
+        <div class="controle">
+            <button id="btn_remover"></button> 
+            <!-- Este é um comentário HTML -->
+            <div id='timer'></div>
+            <div>
+                <h2 id='score'>Score: </h2>
+                <h2 id='total_score'>0</h2>
+            </div>
+        </div>
+    </div>
+    
+ <div id="palco" class="palco"></div>
+ <script src="bolotas.js" type="module"></script>
+ <script src="timer.js"></script>
+    
+    <footer>
+        <p>&copy; 2023 - Raphael Mendes</p>
+    </footer>
+</body>
+</html>
